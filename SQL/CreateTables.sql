@@ -21,6 +21,7 @@ CREATE TABLE [Recipes] (
   [author] nvarchar(255),
   [link] nvarchar(255),
   [version] int,
+  [parent_id] int NULL,
   [favourite] bit DEFAULT 0
 )
 GO
@@ -94,4 +95,7 @@ ALTER TABLE [Recipe_Tags] ADD FOREIGN KEY ([recipe_id]) REFERENCES [Recipes] ([i
 GO
 
 ALTER TABLE [Recipe_Tags] ADD FOREIGN KEY ([tag_id]) REFERENCES [Tags] ([id])
+GO
+
+ALTER TABLE [Recipes] ADD FOREIGN KEY ([parent_id]) REFERENCES [Recipes] ([id])
 GO
