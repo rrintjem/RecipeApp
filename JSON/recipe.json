@@ -1,0 +1,23 @@
+{
+    "title":"",
+    "author":"",
+    "link":"",
+    "version":1,
+    "favourite":false,
+    "Ingredients":[
+        {
+            "ingredient":"",
+            "amount":null,
+            "unit":"",
+            "notes":""
+        }
+    ],
+    "Instructions":[
+        {
+            "sequence":1,
+            "instruction":""
+        }
+    ],
+    "Categories":[""],
+    "Tags":[""]
+}
